@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia & Forms Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #4a90e2;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 10px;
+        }
+        .media-container {
+            margin: 20px 0;
+        }
+        audio, video {
+            width: 100%;
+            border-radius: 8px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+        input, select, textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+            font-size: 16px;
+        }
+        input:invalid {
+            border-color: #ff4d4d;
+        }
+        button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #3a7bc8;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #4a90e2;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .feature-list li {
+            margin-bottom: 10px;
+        }
+        .feature-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Multimedia & Web Forms Demo</h1>
+        <p>A comprehensive demonstration of HTML5 features</p>
+    </header>
+
+    <section id="audio-section">
+        <h2>Audio Element</h2>
+        <div class="media-container">
+            <audio controls>
+                <source src="/api/placeholder/400/320" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>This is an example of HTML5 audio element with controls. The audio source is a placeholder.</p>
+        </div>
+    </section>
+
+    <section id="video-section">
+        <h2>Video Element</h2>
+        <div class="media-container">
+            <video controls poster="/api/placeholder/400/320">
+                <source src="/api/placeholder/400/320" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+            <p>This is an example of HTML5 video element with controls. The video source is a placeholder.</p>
+        </div>
+    </section>
+
+    <section id="image-section">
+        <h2>Image Element</h2>
+        <img src="/api/placeholder/400/320" alt="Placeholder Image" class="feature-image">
+        <p>This is an example of an embedded image using the HTML img tag.</p>
+    </section>
+
+    <section id="list-section">
+        <h2>HTML Lists</h2>
+        
+        <h3>Ordered List - Top 5 HTML5 Features</h3>
+        <ol class="feature-list">
+            <li>Semantic Elements (header, footer, nav, section, article)</li>
+            <li>Audio and Video Support</li>
+            <li>Canvas for Drawing</li>
+            <li>New Form Input Types</li>
+            <li>Local Storage</li>
+        </ol>
+        
+        <h3>Unordered List - Browser Support</h3>
+        <ul class="feature-list">
+            <li>Chrome</li>
+            <li>Firefox</li>
+            <li>Safari</li>
+            <li>Edge</li>
+            <li>Opera</li>
+        </ul>
+        
+        <h3>Description List - HTML Terms</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language - the standard markup language for documents designed to be displayed in a web browser.</dd>
+            
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets - a style sheet language used for describing the presentation of a document written in HTML.</dd>
+            
+            <dt>JavaScript</dt>
+            <dd>A programming language that enables interactive web pages and is an essential part of web applications.</dd>
+        </dl>
+    </section>
+
+    <section id="table-section">
+        <h2>HTML Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>HTML4</th>
+                    <th>HTML5</th>
+                    <th>Browser Support</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Audio Support</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Excellent</td>
+                </tr>
+                <tr>
+                    <td>Video Support</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Excellent</td>
+                </tr>
+                <tr>
+                    <td>Form Validation</td>
+                    <td>JavaScript Only</td>
+                    <td>Built-in Attributes</td>
+                    <td>Very Good</td>
+                </tr>
+                <tr>
+                    <td>Semantic Elements</td>
+                    <td>Limited</td>
+                    <td>Extensive</td>
+                    <td>Excellent</td>
+                </tr>
+                <tr>
+                    <td>Local Storage</td>
+                    <td>Cookies Only</td>
+                    <td>Multiple Options</td>
+                    <td>Excellent</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="form-section">
+        <h2>Registration Form with Validation</h2>
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Enter your full name">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter 10-digit phone number">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="8" placeholder="Minimum 8 characters">
+            </div>
+            
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="120" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="website">Website:</label>
+                <input type="url" id="website" name="website" placeholder="https://example.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="au">Australia</option>
+                    <option value="in">India</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Programming Languages:</label>
+                <div>
+                    <input type="checkbox" id="html" name="languages" value="html">
+                    <label for="html">HTML</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="css" name="languages" value="css">
+                    <label for="css">CSS</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="js" name="languages" value="js">
+                    <label for="js">JavaScript</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="python" name="languages" value="python">
+                    <label for="python">Python</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Experience Level:</label>
+                <div>
+                    <input type="radio" id="beginner" name="experience" value="beginner" required>
+                    <label for="beginner">Beginner</label>
+                </div>
+                <div>
+                    <input type="radio" id="intermediate" name="experience" value="intermediate">
+                    <label for="intermediate">Intermediate</label>
+                </div>
+                <div>
+                    <input type="radio" id="advanced" name="experience" value="advanced">
+                    <label for="advanced">Advanced</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Tell us about yourself"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="range">Rate your HTML knowledge (1-10):</label>
+                <input type="range" id="range" name="range" min="1" max="10" step="1">
+            </div>
+            
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms and conditions</label>
+            </div>
+            
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Musima. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple form validation demo
+        document.getElementById('registration-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted successfully! In a real application, this would be sent to a server.');
+        });
+    </script>
+</body>
+</html>
